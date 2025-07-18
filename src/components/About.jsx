@@ -45,13 +45,14 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
+          <p>
+            I’m a Computer Science & Engineering student at NIT Durgapur with a strong foundation in Data Structures & Algorithms and Full-Stack Development.
+            I’m a hackathon enthusiast, having participated in over 10 hackathons. I was a Semi-Finalist at the Smart India Hackathon and a Quarter-Finalist at HP PowerLab (Top 180 out of 1.3 lakh registrations nationwide).
+            I'm currently focused on solving real-world problems using modern web technologies like React, Next.js, Golang, and PostgreSQL.
+          </p>
+
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

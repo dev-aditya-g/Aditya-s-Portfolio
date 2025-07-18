@@ -1,39 +1,85 @@
 import { motion } from "framer-motion";
+import { TypeAnimation } from "react-type-animation";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import bitmoji from "../assets/bitmoji.png";
 
 const Hero = () => {
   return (
-    <section className={`relative w-full h-screen mx-auto`}>
+    <section className='relative w-full h-screen mx-auto'>
+      {/* Text Section */}
       <div
-        className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
+        className={`absolute inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-col md:flex-row items-start gap-10 z-10`}
       >
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
-          <div className='w-1 sm:h-80 h-40 violet-gradient' />
-        </div>
-
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className='text-[#915EFF]'>Adrian</span>
+        <div className='flex flex-col justify-start items-start'>
+          {/* Heading */}
+          <h1 className='text-[38px] md:text-[46px] lg:text-[48px] font-black text-white leading-tight'>
+            Hi, I'm{" "}
+            <span className='text-[#915EFF]'>
+              <TypeAnimation
+                sequence={[
+                  "Aditya Gupta",
+                  2000,
+                  "a Full Stack Developer",
+                  2000,
+                  "a Hackathon Enthusiast",
+                  2000,
+                ]}
+                wrapper="span"
+                cursor={true}
+                repeat={Infinity}
+              />
+            </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className='sm:block hidden' />
-            interfaces and web applications
+
+          {/* Paragraph */}
+          <p className='text-[20px] md:text-[24px] text-white-100 mt-4 mb-14'>
+            I build modern web apps, love data structures,<br />
+            and enjoy solving real-world problems with code.
           </p>
         </div>
       </div>
 
+      {/* Bitmoji with float + scale + spin-on-hover */}
+      <div className='absolute right-10 top-[150px] hidden md:block z-20'>
+        <motion.img
+          src={bitmoji}
+          alt='Aditya Bitmoji'
+          className='w-[260px] h-[260px] object-contain cursor-pointer'
+          animate={{
+            y: [0, -10, 0],
+            scale: [1, 1.05, 1],
+          }}
+          whileHover={{ rotate: 360 }}
+          transition={{
+            y: {
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+            scale: {
+              duration: 4,
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+            rotate: {
+              duration: 1,
+              ease: "easeInOut",
+            },
+          }}
+        />
+      </div>
+
+      {/* Background 3D Canvas */}
       <ComputersCanvas />
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      {/* Scroll Indicator */}
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-10'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
             <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
+              animate={{ y: [0, 24, 0] }}
               transition={{
                 duration: 1.5,
                 repeat: Infinity,

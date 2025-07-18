@@ -42,19 +42,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Problem Solver",
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Full-Stack Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Hackathon Enthusiast",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Open Source Contributor",
     icon: creator,
   },
 ];
@@ -114,20 +114,23 @@ const technologies = [
   },
 ];
 
+import whisperwave from "../assets/whisperwave.jpeg"; // ✅ Ensure path is correct
+
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    title: "WhisperWave Developer",
+    company_name: "WhisperWave",
+    icon: whisperwave,
+    iconBg: "#FFFFFF", // Or any background color that fits your theme
+    date: "December 2024 - January 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built a secure, anonymous one-to-one therapy platform using Golang, Next.js, and TypeScript.",
+      "Implemented real-time audio calling with Gin framework and managed user sessions robustly.",
+      "Designed scalable APIs and frontend with React Server/Client Components for seamless UX.",
+      "Managed PostgreSQL database via pgAdmin and monetized listener participation through user payments.",
     ],
   },
+
   {
     title: "React Native Developer",
     company_name: "Tesla",
