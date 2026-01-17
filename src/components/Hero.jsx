@@ -21,9 +21,9 @@ const Hero = () => {
                 sequence={[
                   "Aditya Gupta",
                   2000,
-                  "a Full Stack Developer",
+                  "a Problem Solver",
                   2000,
-                  "a Hackathon Enthusiast",
+                  "a Full Stack Developer",
                   2000,
                 ]}
                 wrapper="span"
@@ -35,8 +35,8 @@ const Hero = () => {
 
           {/* Paragraph */}
           <p className='text-[20px] md:text-[24px] text-white-100 mt-4 mb-14'>
-            I build modern web apps, love data structures,<br />
-            and enjoy solving real-world problems with code.
+            I build modern Web applications, have a strong foundation in Data<br />
+            Structures and enjoy solving real-world problems through my code.
           </p>
         </div>
       </div>

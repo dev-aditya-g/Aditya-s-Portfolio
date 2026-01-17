@@ -1,3 +1,4 @@
+// 🔹 ICONS
 import {
   mobile,
   backend,
@@ -15,254 +16,130 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  ww,
+  cse,
+  financetracker,
   threejs,
 } from "../assets";
 
+// 🔹 COMPANY LOGOS
+import whisperwave from "../assets/company/whisperwave.jpeg";
+import career from "../assets/company/career.png";
+import ecell from "../assets/company/ecell.jpg";
+
+// 🔹 NAV LINKS
 export const navLinks = [
-  {
-    id: "about",
-    title: "About",
-  },
-  {
-    id: "work",
-    title: "Work",
-  },
-  {
-    id: "contact",
-    title: "Contact",
-  },
+  { id: "about", title: "About" },
+  { id: "work", title: "Work" },
+  { id: "contact", title: "Contact" },
 ];
 
+// 🔹 SERVICES
 const services = [
-  {
-    title: "Problem Solver",
-    icon: web,
-  },
-  {
-    title: "Full-Stack Developer",
-    icon: mobile,
-  },
-  {
-    title: "Hackathon Enthusiast",
-    icon: backend,
-  },
-  {
-    title: "Open Source Contributor",
-    icon: creator,
-  },
+  { title: "Problem Solver", icon: web },
+  { title: "Full-Stack Developer", icon: mobile },
+  { title: "System Fundamentals", icon: backend },
+  { title: "Open Source Contributor", icon: creator },
 ];
 
+// 🔹 TECHNOLOGIES
 const technologies = [
-  {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "HTML 5", icon: html },
+  { name: "CSS 3", icon: css },
+  { name: "JavaScript", icon: javascript },
+  { name: "TypeScript", icon: typescript },
+  { name: "React JS", icon: reactjs },
+  { name: "Redux Toolkit", icon: redux },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Node JS", icon: nodejs },
+  { name: "MongoDB", icon: mongodb },
+  { name: "Three JS", icon: threejs },
+  { name: "Git", icon: git },
+  { name: "Figma", icon: figma },
+  { name: "Docker", icon: docker },
 ];
 
-import whisperwave from "../assets/whisperwave.jpeg"; // ✅ Ensure path is correct
-
+// 🔹 EXPERIENCE
 const experiences = [
   {
-    title: "WhisperWave Developer",
-    company_name: "WhisperWave",
+    title: "Software Developer Intern",
+    company_name: "Whisperwave",
     icon: whisperwave,
-    iconBg: "#FFFFFF", // Or any background color that fits your theme
-    date: "December 2024 - January 2025",
+    iconBg: "#FFFFFF",
+    date: "May 2025 - June 2025",
     points: [
-      "Built a secure, anonymous one-to-one therapy platform using Golang, Next.js, and TypeScript.",
-      "Implemented real-time audio calling with Gin framework and managed user sessions robustly.",
-      "Designed scalable APIs and frontend with React Server/Client Components for seamless UX.",
-      "Managed PostgreSQL database via pgAdmin and monetized listener participation through user payments.",
+      "Developed core features of an anonymous one-to-one therapy communication platform.",
+      "Built responsive frontend interfaces using Next.js, React (Hooks, Server and Client Components), TypeScript, HTML, and CSS.",
+      "Implemented a secure backend using Golang (Gin) for real-time audio call handling and user session management.",
+      "Designed and optimized RESTful APIs in Golang (Gin) enabling secure, low-latency communication between frontend and backend services.",
     ],
   },
-
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Campus Ambassador",
+    company_name: "Careers360",
+    icon: career,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "May 2025 - June 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Encouraged and guided students to submit honest reviews about their college, helping prospective applicants make informed admission decisions.",
+      "Increased student participation on the Careers360 platform through peer outreach and structured awareness efforts..",
+      "Acted as a point of contact to communicate the importance of transparent college feedback within the campus community.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Campus Ambassador",
+    company_name: "E-cell, IIT Bombay",
+    icon: ecell,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jul 2025 - Jan 2026",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Promoted entrepreneurship and innovation-focused events organized by E-Cell IIT Bombay across the campus.",
+      "Drove student participation in workshops, competitions, and flagship events through targeted promotions and peer engagement.",
+      "Assisted in expanding event visibility and reach among students interested in startups and entrepreneurship.",
     ],
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
+// 🔹 PROJECTS
 const projects = [
   {
-    name: "Car Rent",
+    name: "Whisperwave",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Developed a full-stack platform enabling safe, anonymous discussions on sensitive mental-health topics.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "React", color: "pink-text-gradient" },
+      { name: "Golang", color: "green-text-gradient" },
+      { name: "PostgreSQL", color: "blue-text-gradient" },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: ww,
+    source_code_link: "https://github.com/dev-aditya-g/Whisper_wave-frontend",
   },
   {
-    name: "Job IT",
+    name: "CSS, NIT Durgapur",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Developed & maintained the official website of CSS NIT Durgapur, Integrated event listings, team information, and society updates.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "TypeScript", color: "pink-text-gradient" },
+      { name: "TailwindCSS", color: "green-text-gradient" },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: cse,
+    source_code_link: "https://github.com/dev-aditya-g/CSS-Official-Website",
   },
   {
-    name: "Trip Guide",
+    name: "Finance Tracker",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Currently building a dashboard-based personal finance tracker for managing investments, bills, and shared expenses.",
     tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
+      { name: "React", color: "blue-text-gradient" },
+      { name: "MERN", color: "green-text-gradient" },
+      { name: "TailwindCSS", color: "pink-text-gradient" },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: financetracker,
+    source_code_link: "https://github.com/dev-aditya-g?tab=repositories",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+// 🔹 EXPORTS
+export { services, technologies, experiences, projects };

@@ -47,9 +47,8 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
          className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
           <p>
-            I’m a Computer Science & Engineering student at NIT Durgapur with a strong foundation in Data Structures & Algorithms and Full-Stack Development.
-            I’m a hackathon enthusiast, having participated in over 10 hackathons. I was a Semi-Finalist at the Smart India Hackathon and a Quarter-Finalist at HP PowerLab (Top 180 out of 1.3 lakh registrations nationwide).
-            I'm currently focused on solving real-world problems using modern web technologies like React, Next.js, Golang, and PostgreSQL.
+            I’m a Computer Science & Engineering undergraduate at NIT Durgapur with hands-on experience in building scalable, full-stack applications. I’ve worked as a Software Engineer Intern at Whisperwave, where I contributed to real-time, low-latency communication systems and backend services focused on performance, security, and reliability.
+            I have a strong problem-solving background, having solved 500+ Data Structures and Algorithms problems across major platforms, along with a solid understanding of core computer science fundamentals including OOP, DBMS, Operating Systems and Computer Networks. I have participated in 10+ national-level hackathons , including being a Quarter-Finalist at HP PowerLab (Top 180 teams out of 1.3 lakh registrations). I enjoy applying my technical skills to build impactful, real-world solutions.
           </p>
 
 
